@@ -1,1 +1,51 @@
 
+//First things first,this folder named hw-programming is used for uploading titles that are interesting or typical of some classical theories that I have met during completing
+my homework of C language programming.Since time is limited, not all the titles will be uploaded.It's a new start for me, for the reason that I am starting a journey to study 
+computer science independently.And I will upload from week4 till the end of this course.//
+题目
+1
+我们来尝试修改第一个程序，来跟中大打招呼吧！
+输入样例
+
+无
+输出样例
+
+Hello SYSU!
+提示
+
+简单地替换一下文字就行啦
+#include<stdio.h>
+int main(){
+printf("Hello SYSU!");
+return 0;
+}
+
+题目
+2
+\\梦开始的地方\\
+输出"hello sysu"
+输出样例
+"hello sysu"
+提示
+输出某些符号需要转义字符，例如用\\才能输出一个\
+\\转义符的使用\\
+#include<stdio.h>
+int main(){
+printf("\"hello sysu\"");
+return 0;
+}
+
+题目3
+输出一个整数2021和一个浮点数10.01
+输入样例
+（本题无需输入）
+输出样例
+    2021 10.01
+    #include<stdio.h>
+int main(){
+float b;
+b=10.01;
+printf("2021 %.2f",b);
+return 0;
+}
+
