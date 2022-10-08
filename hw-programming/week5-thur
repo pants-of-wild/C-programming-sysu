@@ -1,0 +1,30 @@
+//This week,we learned some basic theories and characteristics about variables,constants and storage classes.And the hw emphasize on some primary usages of printf and scanf 
+depending on kinds of parameters.With these exercises, we get a better scratch of the structure of a easy program and how to write it.//
+//题目一
+问题输入
+三个整数a, b, c, 含义见题目
+（数据范围：1≤∣a∣,∣b∣,∣c∣,≤1000，且b2−4ac>0）
+问题输出
+满足ax2+bx+c=0的x1​和x2​，保留两位小数，两个根不相等时先输出小的。
+样例输入
+1 2 1
+样例输出
+-1.00 -1.00
+提示
+算开平方可以使用数学库函数，具体可以自己运行下面这段程序
+#include<math.h>
+#include<stdio.h>
+解答//
+//this is a classical title//
+#include<stdio.h>
+#include<math.h>
+int main(){
+int a,b,c;
+double x1,x2;
+scanf("%d %d %d",&a,&b,&c);
+x1=(-b-sqrt(b*b-4*a*c))/(2*a);
+x2=(-b+sqrt(b*b-4*a*c))/(2*a);
+printf("%.2f %.2f",x1,x2);
+return 0;
+
+}
