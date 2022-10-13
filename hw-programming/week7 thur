@@ -1,0 +1,60 @@
+题目
+输入三个整数x,y,z，请把这三个数由小到大输出。
+输入
+0<= x ， y， z <= 1000
+输入样例
+50 10 20
+输出样例
+10 20 50
+提示
+最后输出需要进行换行
+#include <stdio.h>
+
+int main() {
+	int a, b, c;
+	scanf("%d %d %d", &a, &b, &c);
+	if (a >= b & b >= c) {
+		printf("\n%d %d %d", c, b, a);
+	}
+	if (a >= c & c >= b) {
+		printf("\n%d %d %d", b, c, a);
+	}
+	if (b >= a & a >= c) {
+		printf("\n%d %d %d", c, a, b);
+	}
+	if (b >= c & c >= a) {
+		printf("\n%d %d %d", a, c, b);
+	}
+	if (c >= a & a >= b) {
+		printf("\n%d %d %d", b, a, c);
+	}
+	if (c >= b & b >= a) {
+		printf("\n%d %d %d", a, b, c);
+	}
+    return 0;}
+   //this title is both interesting and classical,which is worth .I will soon creat a new storage to upload titles like this, in which there will be many keys that reveal some 
+   significant theories.//
+   题目2
+   已知满足以下两种情况之一时，该年是闰年，反之则不是。
+    年份是4的倍数但不是100的倍数；
+    年份是400的倍数。
+请编写程序读入一个整数，并判断该年份是否是闰年。
+输入格式：
+输入一个整数y，表示当前的年份。
+输出格式：
+输出一行，如果给定的年份是闰年，则输出YES，否则输出NO。
+Sample Input 1:
+1980
+//各种运算符的综合使用//
+#include <stdio.h>
+
+int main() {
+	int year;
+	scanf("%d", &year);
+	if ((year % 4 == 0 & year % 100 != 0) | year % 400 == 0) {
+		printf("YES");
+	} else {
+		printf("NO\n");
+	}
+	return 0;
+}
