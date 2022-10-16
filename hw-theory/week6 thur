@@ -1,0 +1,54 @@
+//topic of this section will mainly focous on "overflow" and "storage"//
+溢出）计算下方代码输出
+
+unsigned char x = 0xff;
+x++;
+printf("%d\n",++x);
+A.257
+B.1
+C.0
+D.-256
+Standard Answer: B
+Question 12 - 单选题
+（溢出）下方代码的输出为：
+#include<stdio.h>
+int main()
+{int a, b;
+	a = 2147483647;//2^31
+  a = a+1;
+	b = a+a;
+	printf("%d,%d\n",a,b);
+}
+A.-2147483648,0
+B.2147483648,4294967296
+C.-2147483648,2147483647
+D.2147483648,0
+Standard Answer: A
+Question 13 - 单选题
+
+（溢出）下方代码的输出为：
+
+#include <stdio.h> 
+int main()
+{ 
+        char x= 0xff;
+        x = x + 1;
+        x = x - 1;
+        
+	printf("%d\n", x);
+	return 0; 
+}
+A.255
+B.0
+C.-1
+D.-256
+Standard Answer: C
+//clock,and axis//
+Question 20 - 不定项选择题
+
+（内存）以下说法正确的是：
+A.内存映射到物理空间一定连续，数据都按顺序处理。
+B.变量是内存中具有特定属性的一个存储单元，变量的地址用于寻找存储空间，存储空间存放变量的值，该值的类型由变量类型来定义。
+C.地址空间表示一个计算机实体所占用的内存大小。
+D.内存地址只是一个编号，代表一个内存空间。内存地址所执行的内存单元大小与内存地址位数无关。
+Standard Answer: B, C, D
